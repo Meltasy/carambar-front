@@ -3,8 +3,7 @@ class Model {
     this.blague = []
   }
   async getRandomBlague() {
-    // Remplacer par un lien vers render.com
-    const response = await fetch(`http://localhost:3000/v1/blagues/random`, { mode: 'cors' })
+    const response = await fetch(`https://carambar-back-5c9h.onrender.com/v1/blagues/random`, { mode: 'cors' })
     console.log(response)
     if (!response.ok) {
       const errorData = await response.json()
