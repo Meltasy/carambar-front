@@ -3,7 +3,7 @@ class Model {
     this.blague = []
   }
   async getRandomBlague() {
-    const response = await fetch(`https://carambar-back-5c9h.onrender.com/v1/blagues/random`, {
+    const response = await fetch('https://carambar-back-5c9h.onrender.com/v1/blagues/random', {
       mode: 'cors',
       headers: {
         'Accept': 'application/json'
